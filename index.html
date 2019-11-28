@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Hosting</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="frontend-dev-project/images/logo.svg" alt="26andfour" class="logo">
+
+      <nav>
+        <a href="#" class="hideDesktop">
+          <img src="frontend-dev-project/images/ham.svg" alt="toggle menu" class="menu" id="menu">
+        </a>
+
+        <ul class="showDesktop hideMobile" id="nav">
+          <li id="exit" class="exitBtn hideDesktop"><img src="frontend-dev-project/images/exit.svg" alt=""></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sevices</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <img src="frontend-dev-project/images/server.svg" alt="Server Image" class="server">
+
+      <h1>Web Hosting for the Modern Era</h1>
+      <p class="subHead">
+        Go serverless and pay only for what you use
+      </p>
+
+      <img src="frontend-dev-project/images/scroll.svg" alt="scroll" class="scroll hideMobile showDesktop">
+    </section>
+  </div>
+
+  <div class="blueContainer">
+    <div class="container">
+      <ul>
+        <li>
+          <img src="frontend-dev-project/images/icon-1.svg" alt="calenderIcon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum ducimus sit, fugit enim dolorum accusamus, pariatur optio nihil quae ipsum nisi, veniam distinctio alias perspiciatis maiores quibusdam ipsam excepturi!</p>
+        </li>
+        <li>
+          <img src="frontend-dev-project/images/icon-2.svg" alt="calenderIcon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum ducimus sit, fugit enim dolorum accusamus, pariatur optio nihil quae ipsum nisi, veniam distinctio alias perspiciatis maiores quibusdam ipsam excepturi!</p>
+        </li>
+        <li>
+          <img src="frontend-dev-project/images/icon-3.svg" alt="calenderIcon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum ducimus sit, fugit enim dolorum accusamus, pariatur optio nihil quae ipsum nisi, veniam distinctio alias perspiciatis maiores quibusdam ipsam excepturi!</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="greyContainer">
+    <div class="container">
+      <ul>
+        <li>
+          <figure>
+            <img src="frontend-dev-project/images/user1.png" alt="user testomonial picture">
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eos maxime cumque quo harum inventore, consequatur facere ea dignissimos neque tenetur dolor suscipit ipsam a. Eaque aliquid ipsa non dolorem.
+            </blockquote>
+            <figcaption>
+              -Jane Doe
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="frontend-dev-project/images/user2.png" alt="user testomonial picture">
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eos maxime cumque quo harum inventore, consequatur facere ea dignissimos neque tenetur dolor suscipit ipsam a. Eaque aliquid ipsa non dolorem.
+            </blockquote>
+            <figcaption>
+              -John Doe
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Start your free trial now!</h2>
+    <a href="#" class="cta">Get Started</a>
+  </div>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="container">
+        <a href="#"><img src="frontend-dev-project/images/logo-white.svg" alt="logo" class="logo"></a>
+        <p class="address">Melrose Place, 90210 <br>USA</p>
+        <ul class="footerLinks">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="empty">
+
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+
+    var menu = document.getElementById('menu');
+    var nav  = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e){
+      nav.classList.toggle('hideMobile');
+
+      e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e){
+      nav.classList.toggle('hideMobile');
+
+      e.preventDefault();
+    });
+
+
+  </script>
+</body>
+
+</html>
